@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="center">
+	
+		<form class="form">
+		    <h1>Login</h1>
+
+			<div class="txt_field">
+				<input type="email" id="Email" placeholder="Email" required>
+				<label></label>
+			</div><br>
+
+			<div class="txt_field">
+                <input type="password" id="Password" placeholder="Password" required>
+                <label></label>
+			</div>
+
+			<input type="submit" id="Submit" value="Login" onclick="validate()">
+			<br>
+            <br>
+            <br>
+
+            <div class="pass" >
+				Forget <a href="https://support.google.com/mail/answer/41078?hl=en&co=GENIE.Platform%3DDesktop">Password</a>
+			</div>
+			
+           <div class="signup_link">Don't have an account?
+				    <a href="https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp">sign up</a>
+			</div>
+		</form>
+	</div>
+    <script>
+            //document.getElementById("Submit");
+            document.getElementById("Submit").addEventListener("click", validate);
+           
+                                 
+       function validate()
+                          {
+                       
+                             if
+                             	( document.getElementById("Email").value == "Ojassoft@gmail.com"
+                                && document.getElementById("Password").value == "Ojassoft") 
+                             {
+                                alert("Login succeeded");
+
+                                 window.location.href ="file:///C:/Users/Asus/Desktop/assignment/table.html";
+                                      
+                              }
+                               else{
+                                      alert("Login failed");
+                                   }
+
+                            }
+
+
+      </script>
+</body>
+</html>
